@@ -7,11 +7,13 @@
     box-sizing: border-box;
     border: none;
     font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
 }
 html,
 body{
     font-size: 62.5%;
     overflow-x: hidden; // no scroll barra lateral x eixo
+    scroll-behavior: smooth;
 }
 img{
     max-width: 100%;
