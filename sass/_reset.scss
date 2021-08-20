@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none; //don't remove when working with acessibility
+    box-sizing: border-box;
+    border: none;
+}
+html,
+body{
+    font-size: 62.5%;
+    overflow-x: hidden; // no scroll barra lateral x eixo
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
