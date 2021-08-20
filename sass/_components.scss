@@ -30,11 +30,12 @@ h4{
 .card-depoimento{
     width: 100%;
     max-width: 38.4rem;
+    height: 20.9rem;
     background: rgba(241, 240, 245,0.55);
     border-radius: 0.8rem;
-    padding: 3.7rem 3.1rem 2.3rem 3.2rem;
+    padding: 3.7rem 3.2rem 2.3rem 3.2rem;
     .user{
-        @include flex(row, flex-start, space-between);
+        @include flex(row, center, space-between);
         strong{
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
