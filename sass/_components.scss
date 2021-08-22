@@ -52,3 +52,36 @@ h4{
         padding-top: 2.1rem;
     }
 }
+.btn-primary{
+    display: inline-block;
+    line-height: 4.8rem; //alinhar ao centro 
+    background-color: $brand-yellow;
+    padding: 0 2.6rem;
+    border-radius: 12.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #855B35;
+    transition: all .3s;
+    &:hover{
+    background-color: #FFDC5C;
+    }
+}
+.btn-secondary{
+    display: inline-block;
+    line-height: 4.8rem; //alinhar ao centro 
+    background-color: $brand-yellow;
+    padding: 0 2.6rem;
+    border-radius: 12.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    border: 1px solid #00A5F0;
+    color: #00A5F0;
+    transition: all .3s;
+    background-color: transparent;
+    &:hover{
+        color: #FFFFFF;
+        background-color: $brand-light-blue;
+    }
+}
