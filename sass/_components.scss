@@ -68,6 +68,14 @@ h4{
         color: #FFFFFF;
         background-color: $brand-light-blue;
     }
+    &.white{
+        border: 1px solid #ffffff;
+        color: white;
+        &:hover{
+            background-color: white;
+            color: #01c7df;
+        }
+    }
 }
 .btn-primary, .btn-secondary{
     display: inline-block;
