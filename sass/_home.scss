@@ -89,3 +89,16 @@
     }
 }
 
+// section card neon
+.s-card-neon{
+    padding-top: 12.9rem;
+    .left-area{
+        @include flex(column, flex-start, center);
+        width: 100%;
+        max-width: 27.7rem;
+        .ilustra-mockup{
+            width: 100%;
+            max-width: 27.7rem;
+        }   
+    }
+}
