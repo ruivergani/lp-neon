@@ -1,3 +1,30 @@
 header{
     background-color: #0073CE;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 3.4rem 0px;
+    .container{
+        @include flex(row, center, space-between);
+        nav{
+            display: flex;
+            align-items: center;
+            ul{
+                margin-right: 5.9rem; // button space
+                @include flex(row, center, center);
+                gap: 4.8rem;
+                li{
+                    a{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        line-height: 125%;
+                        text-align: right;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            
+        }
+    }
 }
