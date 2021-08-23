@@ -2,7 +2,8 @@
 .s-hero{
     width: 100%;
     height: 78.6rem;
-    background: url("../img/bg-hero.svg") no-repeat  center  center; //export the background bg-hero 
+    background: linear-gradient(45.08deg, rgba(11, 110, 182,0.6) -0.6%, rgba(0, 215, 215, 0) 72.53%);
+    background: linear-gradient(100.52deg, #00A5F0 5.63%, #00D7D7 95.75%);
     padding-top: 17.5rem;
     .container{
         @include flex(row, flex-start, space-between);
