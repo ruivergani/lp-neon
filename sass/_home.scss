@@ -1,0 +1,11 @@
+// section s-hero
+.s-hero{
+    width: 100%;
+    height: 78.6rem;
+    background: url("../img/bg-hero.svg") no-repeat  center  center; //export the background bg-hero 
+    padding-top: 17.5rem;
+    .container{
+        @include flex(row, center, space-between);
+
+    }
+}
