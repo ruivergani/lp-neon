@@ -263,6 +263,7 @@
     padding-top: 13.4rem;
     .top{
         margin-bottom: 4rem;
+        @include flex(row, flex-end, space-between);
         h2{
             span{
                 font-family: 'Poppins', sans-serif;
@@ -273,11 +274,40 @@
                 color: $grey-200;
                 margin-bottom: 1.4rem;
             }
+            span.emoji{
+                font-size: 3rem;
+                display: inline !important;
+                margin-left: 2rem;
+            }
             .icon{
                 width: 2.8rem;
                 height: 3.1rem;
             }
             color: $grey-600;
         }
+        // editing the pagination classes
+        .swiper-pagination{
+            position: relative;
+            transition: all .3s;
+            .swiper-pagination-bullet{
+                background: $brand-yellow;
+                opacity: 0.3;
+                border-radius: 12px;
+                &:not(:first-child){
+                    margin-left: 4px;
+                }
+                transition: all .3s;
+                &-active{
+                    opacity: 1;
+                    width: 17.23px;
+                    height: 7px;
+                    background: $brand-yellow;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+    .slide-depoimentos{
+        overflow: hidden; // everything outside the slide will be hidden 
     }
 }
