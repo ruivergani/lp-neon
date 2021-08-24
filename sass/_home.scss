@@ -258,3 +258,26 @@
     }
 }
 
+// section card depoimentos
+.s-card-depoimentos{
+    padding-top: 13.4rem;
+    .top{
+        margin-bottom: 4rem;
+        h2{
+            span{
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold;
+                line-height: 112%;
+                font-size: 4rem;
+                letter-spacing: -1px;
+                color: $grey-200;
+                margin-bottom: 1.4rem;
+            }
+            .icon{
+                width: 2.8rem;
+                height: 3.1rem;
+            }
+            color: $grey-600;
+        }
+    }
+}
