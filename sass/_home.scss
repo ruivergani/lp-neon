@@ -93,12 +93,56 @@
 .s-card-neon{
     padding-top: 12.9rem;
     .left-area{
-        @include flex(column, flex-start, center);
         width: 100%;
         max-width: 27.7rem;
+        @include flex(column, flex-start, center);
         .ilustra-mockup{
             width: 100%;
             max-width: 27.7rem;
-        }   
+            position: relative;
+            .circle{
+                position: absolute;
+                z-index: -1;
+                top: 8.7rem; // adjust top position inside div
+                max-width: 37.7rem; // width of circle
+                margin-left: -21.4rem; // circle outside of container
+            }
+        }  
+        .text{
+            @include flex(column, center, center);
+            .icon{
+                @include flex(column, center, center);
+                margin-top: 2.1rem;
+                .dots{
+                    margin-bottom: 2.1rem;
+                }
+            }
+            .info-txt{
+                @include flex(column, center, center);
+                h3{
+                    margin-top: 3.1rem;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 2.4rem;
+                    line-height: 150%;
+                    text-align: center;
+                    letter-spacing: -0.5px;
+                    color: #33303E;
+                }
+                p{
+                    line-height: 150%;
+                    text-align: center;
+                    color: rgba(95, 92, 107,0.8);
+                    margin-bottom: 2.6rem;
+                }
+                ul{
+                    li{
+                        a{
+                            margin-top: 13px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
