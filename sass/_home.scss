@@ -311,3 +311,62 @@
         overflow: hidden; // everything outside the slide will be hidden 
     }
 }
+
+// section conta digital
+.s-conta-digital{
+    padding-top: 12.7rem;
+    .text{
+        max-width: 54.2rem;
+        h2{
+            color: $grey-600;
+            span{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 4rem;
+                line-height: 112%;
+                display: inline-block;
+                letter-spacing: -1px;
+                color: $grey-200;
+                opacity: 0.8;
+                padding-bottom: 9px;
+            }
+        }
+        ul{
+            margin-bottom: 4.9rem;
+            margin-top: 4.5rem;
+            li{
+                display: flex;
+                align-items: center;
+                &:not(:last-child){
+                    margin-bottom: 4.5rem;
+                }
+                .icon{
+                    @include flex(row, center, center);
+                    background-color: #00D7D7;
+                    width: 4.5rem;
+                    height: 4.5rem;
+                    margin-right: 2.6rem;
+                    border-radius: 0.8rem;
+                }
+                .info{
+                    h4{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 500;
+                        font-size: 2rem;
+                        line-height: 112%;
+                        letter-spacing: -0.5px;
+                        color: $grey-400;
+                        margin-bottom: 4px;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                        line-height: 150%;
+                        color: $grey-300;
+                    }
+                }
+            }
+        }
+
+    }
+    
+}
