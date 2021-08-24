@@ -118,6 +118,7 @@
                 }
             }
             .info-txt{
+                width: 100%;
                 @include flex(column, center, center);
                 h3{
                     margin-top: 3.1rem;
