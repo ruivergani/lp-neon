@@ -214,6 +214,47 @@
                 }
             }
         }
+        .box-card{
+            width: 100%;
+            height: 41rem;
+            background: url(../img/bg-box-card-neon.svg) no-repeat center center;
+            border-radius: 1.2rem;
+            @include flex(row, center, space-between);
+            .image{
+                margin-right: -3.1rem;
+            }
+            .txt{
+                width: 100%;
+                max-width: 38rem;
+                padding-left: 5.9rem;
+                h2,h3,p{
+                    color: #FFFFFF;
+                }
+                h2{
+                    font-weight: bold;
+                    line-height: 112%;
+                    letter-spacing: -1px;
+                    margin-bottom: 1.1rem;
+                    max-width: 32.7rem;
+                }
+                h3{
+                    font-weight: 500;
+                    line-height: 150%;
+                    letter-spacing: -0.5px;
+                    margin-bottom: 8px;
+                }
+                p{
+                    line-height: 150%;
+                }
+                .btns{
+                    margin-top: 1rem;
+                    display: flex;
+                    gap: 1.6rem;
+                    align-items: center;
+                }
+            }
+        }
         
     }
 }
+
