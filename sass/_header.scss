@@ -30,7 +30,57 @@ header{
                     }
                 }
             }
+            .btn-mobile{
+                display: none;
+            }
             
         }
     }
+
+    /* Responsive */
+    @include responsive(1086px){
+        .container{
+            nav{
+                ul{
+                    gap: 2rem;
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+    @include responsive(991px){
+        .container{
+            .logo{
+                max-width: 10.8rem;
+            }
+            nav{
+                ul{
+                   display: none;
+                }
+                .btn-mobile{
+                    display: inline-block;
+                    margin-left: 4rem;
+                }
+            }
+
+        }
+        
+    }
+    @include responsive(480px){
+        header{
+            height: 7.3rem;
+        }
+        .container{
+            nav{
+                .btn-secondary{
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+
+
+
 }
