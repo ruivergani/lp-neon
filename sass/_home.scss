@@ -255,9 +255,28 @@
                 }
             }
             .area-image{
+                max-width: 31.8rem;
                 h2{
                     display: none;
                 }
+                .image-hero{
+                    height: 27rem;
+                    .circle{
+                        max-width: 26.7rem;
+                        top: 0;
+                        right: 0;
+                    }
+                    .card-front{
+                        max-width: 21.2rem;
+                        top: 2.8rem;
+                    }
+                    .card-back{
+                        max-width: 17rem;
+                        bottom: 0rem;
+                        right: 0.6rem;
+                    }
+                }
+
             }
         }
     }
