@@ -55,7 +55,6 @@
             margin-right: -17.4rem;
             h2{
                 font-weight: 600;
-                font-size: 5.6rem;
                 line-height: 8.4rem;
                 margin-bottom: 6.7rem;
                 letter-spacing: -2px;
@@ -73,16 +72,191 @@
                 .circle{
                     top: 2.8rem;
                     right: 4.3rem;
+                    max-width: 55.3rem; // set this to the size be smaller when reducing the font as well
                 }
                 .card-front{
                     top: 4.1rem;
                     left: 0;
                     z-index: 2;
+                    max-width: 43.5rem; // set this to the size be smaller when reducing the font as well
                 }
                 .card-back{
                     z-index: 1;
                     bottom: 4.6rem;
                     right: 8.6rem;
+                    max-width: 35.3rem; // set this to the size be smaller when reducing the font as well
+                }
+            }
+        }
+    }
+    /* ===== Responsive ====== */
+    @include responsive(1440px){
+        .container{
+            .area-image{
+                margin-right: -13rem;
+            }
+        }
+    }
+    @include responsive(1366px){
+        .container{
+            .area-image{
+                margin-right: -8.5rem;
+            }
+        }
+    }
+    @include responsive(1280px){
+        .container{
+            .area-image{
+                margin-right: -10rem;
+                .image-hero{
+                    .card-back{
+                        right: 4rem;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(1050px){ 
+        padding-top: 14.5rem;
+        height: 66rem;
+       .container{
+            .text{
+                ul{
+                    margin-top: 4.4rem;
+                }
+            }
+
+
+           .area-image{
+               margin-right: -1rem;
+               h2{
+                   margin-bottom: 1rem;
+               }
+               .image-hero{
+                   top: 0;
+                   height: 45rem;
+                    .card-front{
+                        top: 6rem;
+                        max-width: 35rem;
+                    }
+                    .card-back{
+                        max-width: 29rem;
+                        bottom: 0;
+                    }
+                    .circle{
+                        max-width: 46rem;
+                    }
+               }
+                
+           }
+       }
+    }
+    @include responsive(991px){
+        height: 89.1rem;
+        .container{
+            @include flex(column, center, center);
+            .text{
+                margin-bottom: 5rem;
+                text-align: center;
+                max-width: 68.5rem;
+                @include flex(column, center, center);
+                h3{
+                    font-size: 1.8rem;
+                    margin-bottom: 2.4rem;
+                }
+                h1{
+                    font-size: 4.8rem;
+                    line-height: 112%;
+                    letter-spacing: -0.5px;
+                    margin-bottom: 2.6rem;
+                }
+                ul{
+                    max-width: 59rem;
+                    li{
+                        text-align: left;
+                        .icon{
+                            margin-right: 1.1rem;
+                        }
+                        span{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+            .area-image{
+                max-width: 51.2rem;
+                h2{
+                    line-height: 6rem;
+                    text-align: center;
+                    letter-spacing: -0.5px;
+                    margin-bottom: 1.9rem;
+                }
+                .image-hero{
+                    margin: 0 auto;
+                    height: 42.4rem;
+                    .circle{
+                        top: 0;
+                        right: 1.3rem;
+                        max-width: 43rem;
+                    }
+                    .card-front{
+                        top: 3.5rem;
+                        left: 0rem;
+                        max-width: 34rem;
+                    }
+                    .card-back{
+                        max-width: 27.5rem;
+                        bottom: 3.6em;
+                        right: 2.9rem;
+                    }
+                }
+            }
+        }
+
+    }
+    @include responsive(480px){
+        height: 73.9rem;
+        .container{
+            .text{
+                h3{
+                    font-size: 1.6rem;
+                    line-height: 120%;
+                    text-align: center;
+                    letter-spacing: -0.5px;
+                    margin-bottom: 1.5rem;
+                }
+                h1{
+                    font-size: 3.2rem;
+                    line-height: 112%;
+                    text-align: center;
+                    letter-spacing: -0.5px;
+                    margin-bottom: 3.7rem;
+                }
+                ul{
+                    margin-top: 3.9rem;
+                    padding-left: 5.8rem;
+                    @include flex(column, flex-start, center);
+                    li{
+                        &:not(:last-child){
+                            margin-bottom: 1.6rem;
+                        }
+                        .icon{
+                            margin-right: 1.8rem;
+                            width: auto;
+                            height: auto;
+                            background-color: transparent;
+                        }
+                        span{
+                            line-height: 22px;
+                        }
+                    }
+                    
+
+                }
+            }
+            .area-image{
+                h2{
+                    display: none;
                 }
             }
         }
