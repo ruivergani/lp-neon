@@ -449,6 +449,112 @@
         }
         
     }
+
+    /* ==== Responsive ==== */
+    @include responsive(1200px){
+        .left-area{
+            .ilustra-mockup{
+                .circle{
+                    display: none;
+                }
+            }
+        }
+        .right-area{
+            max-width: 72rem;
+            .main-text{
+                ul{
+                    li{
+                        .info{
+                            .txt{
+                                margin-left: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .box-card{
+                padding-left: 0rem;
+                .txt{
+                    padding-left: 3rem;
+                }
+                .image{
+                    margin-right: -8px;
+                }
+            }
+        }
+    }
+    @include responsive(991px){
+        .container{
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+        .left-area{
+            max-width: 61rem;
+            margin: 0 auto;
+            padding-top: 9.3rem;
+            @include flex(row, center, center);
+            gap: 8.5rem;
+            .ilustra-mockup{
+                max-width: 25.5rem;
+            }
+            .text{
+                max-width: 27rem;
+                .icon{
+                    .dots{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .right-area{
+            margin-top: 3.2rem;
+            .main-text{
+                margin-bottom: 5.7rem;
+                h2{
+                    max-width: 42.4rem;
+                    text-align: center;
+                    font-size: 3.6rem;
+                    padding-bottom: 5.2rem;
+                    margin: 0 auto;
+                }
+                .btn{
+                    display: block;
+                    text-align: center;
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+            .box-card{
+                max-width: 94%; // move size accordingly
+                .txt{
+                    max-width: 32.6rem;
+                    padding-left: 5rem;
+                    h2{
+                        font-size: 3.2rem;
+                        line-height: 48px;
+                        letter-spacing: -1.72px;
+                    }
+                    h3{
+                        font-size: 2.4rem;
+                        line-height: 120%;
+                        margin-bottom: 10px;
+                    }
+                    .btns{
+                        margin-top: 2rem;
+                        gap: 2.4rem;
+                    }
+                }
+                .image{
+                    margin-right: -4rem;
+                }
+            }
+        }
+    }
+    @include responsive (600px){ // Mobile
+
+    }
 }
 
 // section card depoimentos
