@@ -285,6 +285,7 @@
 // section card neon
 .s-card-neon{
     padding-top: 12.9rem;
+    position: relative;
     .container{
         @include flex(row, flex-start, space-between);
     }
@@ -578,8 +579,42 @@
     }
     @include responsive(480px){
         padding-top: 8.6rem;
+        &:after{
+            content: "";
+            width: 100%;
+            position: absolute;
+            height: 21.4rem;
+            left: 0px;
+            bottom: 0;
+            z-index: -3;
+            background: linear-gradient(180deg, #F7F7FA 0%, rgba(247, 247, 250, 0) 100%);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+        }
         .left-area{
             flex-direction: column-reverse;
+            gap: 4rem;
+            .ilustra-mockup{
+                max-width: 21.8rem;
+                height: 39.7rem; //mockup height 
+                overflow: hidden;
+            }
+            .text{
+                .icon{
+                    margin-bottom: 1.4rem;
+                }
+                .info-txt{
+                    h3{
+                        margin-top: 0px;
+                    }
+                    p{
+                        margin-bottom: 0px;
+                    }
+                    ul{
+                        padding-top: 4.4rem;
+                        max-width: 20.2rem;
+                    }
+                }
+            }
         }
         .right-area{
             .main-text{
