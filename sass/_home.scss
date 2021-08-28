@@ -684,6 +684,7 @@
         margin-bottom: 4rem;
         @include flex(row, flex-end, space-between);
         h2{
+            width: 100%;
             span{
                 font-family: 'Poppins', sans-serif;
                 font-weight: bold;
@@ -708,6 +709,7 @@
         .swiper-pagination{
             position: relative;
             transition: all .3s;
+            width: 60px;
             .swiper-pagination-bullet{
                 background: $brand-yellow;
                 opacity: 0.3;
@@ -728,6 +730,42 @@
     }
     .slide-depoimentos{
         overflow: hidden; // everything outside the slide will be hidden 
+    }
+
+    /* ==== Responsive ==== */
+    @include responsive(991px){
+        .top{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+            h2{
+                font-size: 3.6rem;
+                text-align: center;
+                margin-bottom: 5rem;
+                span{
+                    font-size: 3.6rem;
+                    margin-bottom: 1.2rem;
+                }
+            }
+        }
+    }
+    @include responsive(480px){ //Iphone X
+        padding-top: 7.6rem;
+        .top{
+            margin-bottom: 3.4rem;
+            h2{
+                max-width: 28.5rem;
+                font-size: 2.8rem;
+                font-weight: 600;
+                margin-bottom: 3.4rem;
+                span{
+                    margin-bottom: 1.1rem;
+                    font-size: 2.8rem;
+                    font-weight: 600;
+                }
+            }
+        }
     }
 }
 
@@ -804,6 +842,7 @@
             &.circle{
                 right: -5px;
                 bottom: 0;
+                z-index: -1;
             }
             &.mockup-02{
                 z-index: 2;
