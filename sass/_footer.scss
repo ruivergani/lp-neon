@@ -4,7 +4,6 @@ footer{
     .container{
         
     }
-    
     .top{
         @include flex(row, flex-start, space-between);
         border-bottom: 2px solid  rgba(73, 197, 253,0.2);
@@ -90,8 +89,6 @@ footer{
             }
         }
     }
-
-
     .bottom{
         border-top: 2px solid  rgba(73, 197, 253,0.2);
         display: flex;
@@ -112,4 +109,6 @@ footer{
             font-size: 1.8rem;
         }
     }
+    /* === Responsive === */
+    
 }
