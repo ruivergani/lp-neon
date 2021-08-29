@@ -37,7 +37,8 @@ $(window).on("scroll", function() {
 // AOS Animate 
 
 AOS.init({
-  duration : 1000
+  duration : 1000, // duration of the animation
+  once: true       // execute only once
 });
 
 
