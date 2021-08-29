@@ -79,12 +79,14 @@
                     left: 0;
                     z-index: 2;
                     max-width: 43.5rem; // set this to the size be smaller when reducing the font as well
+                    animation: floating 6s infinite; // could be forwards (not infinite);
                 }
                 .card-back{
                     z-index: 1;
                     bottom: 4.6rem;
                     right: 8.6rem;
                     max-width: 35.3rem; // set this to the size be smaller when reducing the font as well
+                    animation: floating 8s infinite; // could be forwards (not infinite);
                 }
             }
         }
