@@ -110,5 +110,86 @@ footer{
         }
     }
     /* === Responsive === */
-    
+    @include responsive(1150px){
+        .main{
+            nav{
+                max-width: 76rem;
+            }
+        }
+    }
+    @include responsive(991px){ /* === Tablet === */
+        .main{
+            width: 100%;
+            position: relative;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-bottom: 0px;
+            nav{
+                justify-content: flex-start;
+                width: 100%;
+                flex-wrap: wrap;
+                .item{
+                    width: 33%;
+                    margin-bottom: 7.6rem;
+                }
+            }
+        }
+        .btns{
+            position: absolute;
+            right: 0;
+            bottom: 10rem;
+        }
+        .bottom{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    @include responsive(600px){
+        .top{
+            @include flex(column, center, center);
+            .share{
+                @include flex(column, center, center);
+                margin-top: 3.2rem;
+            }
+        }
+        .main{
+            @include flex(column, center, center);
+            .btns{
+                button{
+                    display: block;
+                    padding: 0px;
+                    img{
+                        display: none;
+                    }
+                    .info{
+                        text-align: center;
+                    }
+                }
+            }
+            nav{
+                justify-content: flex-start;
+                width: 100%;
+                flex-wrap: wrap;
+                .item{
+                    width: 50%;
+                    margin-bottom: 7.6rem;
+                }
+            }
+        }
+        .btns{
+            width: 100%;
+            position: relative;
+            @include flex(column, center, center);
+            bottom: initial;
+            left: initial;
+           
+        }
+        .bottom{
+            border-top: none;
+            p{
+                max-width: 25.7rem;
+            }
+            
+        }
+    }
 }
