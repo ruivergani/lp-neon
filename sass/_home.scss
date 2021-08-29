@@ -844,7 +844,6 @@
         width: 100%;
         max-width: 71.2rem;
         height: 59.8rem;
-
         margin-right: -3.8rem; // maximum left respecting the size of grid
         left: 12.5rem; // use the left because the div has limited size and need to go over the grid
         img{
@@ -862,6 +861,120 @@
             &.mockup-01{
                 bottom: 4.8rem;
                 left: 0px;
+            }
+        }
+    }
+
+    /* === Responsive === */
+    @include responsive(1200px){
+        .container{
+            flex-direction: column;
+            align-items: center;
+        }
+        .image{
+            margin-right: 0px;
+            left: 0;
+            margin-top: 8rem;
+        }
+        .text{
+            @include flex (column, center, center);
+            h2{
+                text-align: center;
+            }
+            width: 75%;
+        }
+    }
+
+    @include responsive (991px){ 
+        padding-top: 8.6rem;
+        padding-bottom: 8.1rem;
+        h2{
+            font-size: 3.6rem;
+        }
+        .text{
+            width: 100%;
+            ul{
+                margin-top: 5rem;
+                max-width: 63rem;
+            }
+        }
+        .image{
+            width: 100%;
+            max-width: 58.3rem;
+            height: 63.3rem;
+            margin-top: 13.8rem;
+            img{
+                &.circle{
+                    width: 100%;
+                    bottom: 0;
+                    right: 0;
+                }
+                &.mockup-02{
+                    z-index: 2;
+                    top: -5.5rem;
+                    left: 31rem;
+                    width: 100%;
+                    max-width: 22.5rem;
+                }
+                &.mockup-01{
+                    bottom: 5.2rem;
+                    left: 7.6rem;
+                    width: 100%;
+                    max-width: 22.5rem;
+                }
+            }
+        }
+    }
+    
+    @include responsive (480px){
+        padding-top: 3.4rem;
+        padding-bottom: 13.2rem;
+        text-align: center;
+        h2{
+            font-size: 2.4rem;
+        }
+        .text{
+            ul{
+                margin-bottom: 4.2rem;
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 4.2rem;
+                    }
+                    max-width: 29rem;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .icon{
+                        margin-right: 0px;
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+        .image{
+            width: 100%;
+            max-width: 32.5rem;
+            height: 41.1rem;
+            margin-top: 0px;
+            img{
+                &.circle{
+                    width: 100%;
+                    bottom: -5.7rem;
+                    right: 0;
+                }
+                &.mockup-02{
+                    z-index: 2;
+                    bottom: 30px;
+                    left: 175px;
+                    width: 100%;
+                    max-width: 16.8rem;
+                }
+                &.mockup-01{
+                    bottom: 5.7rem;
+                    left: -1.3rem;
+                    width: 100%;
+                    max-width: 16.8rem;
+                }
             }
         }
     }
