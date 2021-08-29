@@ -14,12 +14,17 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <title>Redesign - Landing Page NEON</title>
     <!-- Swipper Slide -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- AOS Animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- MAIN css -->
     <link rel="stylesheet" href="./css/main.css">
 
     <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
@@ -52,7 +57,7 @@
 
     <section class="s-hero">
         <div class="container">
-            <div class="text">
+            <div class="text" data-aos="fade-right">
                 <h3> Abra sua conta, é só baixar o app!</h3>
                 <h1>A conta digital certa pra cuidar bem do seu dinheiro</h1>
                 <button class="btn-primary">Abra sua conta digital</button>
@@ -78,8 +83,8 @@
                 </ul>
             </div>
             <div class="area-image">
-                <h2>Banco 100% digital</h2>
-                <div class="image-hero">
+                <h2 data-aos="fade-left">Banco 100% digital</h2>
+                <div class="image-hero" data-aos="zoom-in">
                     <img src="./img/card-neon-front.png" class="card-front" alt="card neon front">
                     <img src="./img/card-neon-back.png" class="card-back" alt="card neon back">
                     <img src="./img/circle-cards-neon.svg" class="circle" alt="background circle neon">
@@ -380,6 +385,8 @@
 
     <!-- script swipper slide -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- AOS Animate Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Jquery / Main.js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="./js/main.js"></script>

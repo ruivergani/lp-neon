@@ -23,7 +23,7 @@
         }
     });
 
-// Script to change background color 
+// Script to change background color header
 
 $(window).on("scroll", function() {
   if($(window).scrollTop() > 50) {
@@ -32,6 +32,12 @@ $(window).on("scroll", function() {
       //remove the background property so it comes transparent again (defined in your css)
      $("#cabecalho").removeClass("active");
   }
+});
+
+// AOS Animate 
+
+AOS.init({
+  duration : 1000
 });
 
 
