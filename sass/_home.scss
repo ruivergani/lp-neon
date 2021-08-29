@@ -748,10 +748,16 @@
                     margin-bottom: 1.2rem;
                 }
             }
+            .swiper-pagination{
+                width: 100%;
+            }
         }
     }
     @include responsive(480px){ //Iphone X
         padding-top: 7.6rem;
+        .container{
+            padding: 0px 0px 0px 20px;
+        }
         .top{
             margin-bottom: 3.4rem;
             h2{
@@ -765,7 +771,11 @@
                     font-weight: 600;
                 }
             }
+            .swiper-pagination{
+                width: 100%;
+            }
         }
+        
     }
 }
 
