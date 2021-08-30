@@ -1,9 +1,6 @@
 footer{
     background-color: $brand-blue;
     padding-top: 4.9rem;
-    .container{
-        
-    }
     .top{
         @include flex(row, flex-start, space-between);
         border-bottom: 2px solid  rgba(73, 197, 253,0.2);
