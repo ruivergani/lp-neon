@@ -27,10 +27,10 @@
 
 $(window).on("scroll", function() {
   if($(window).scrollTop() > 50) {
-      $("#cabecalho").addClass("active");
+      $("#cabecalho").addClass("bgON");
   } else {
       //remove the background property so it comes transparent again (defined in your css)
-     $("#cabecalho").removeClass("active");
+     $("#cabecalho").removeClass("bgON");
   }
 });
 
@@ -43,10 +43,11 @@ AOS.init({
 
 // Menu Mobile
 
-function openNav() {
-  document.getElementById("myUl").style.height = "100%";
-}
+const btn_mobile = document.querySelectorAll('.btn-mobile');
+const nav = document.querySelector('#nav')
 
-function closeNav() {
-  document.getElementById("myUl").style.height = "0%";
-}
+btn_mobile.forEach(btn => {
+    btn.addEventListener('click', function() {
+        nav.classList.toggle('active')
+    })
+})

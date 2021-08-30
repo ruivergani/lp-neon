@@ -8,7 +8,7 @@ header{
     display: flex;
     z-index: 10000;
     transition: all .3s;
-   &.active{
+   &.bgON{ // background on 
        background-color: #0073CE;
        border-bottom: 2px solid #0073CE;
    }
@@ -36,10 +36,13 @@ header{
                     }
                 }
             }
-            /* ==== Mobile Menu ==== */
-            .btn-mobile{
-                display: none;
-            }
+        }
+        /* ==== Mobile Menu ==== */
+        .btn-mobile{
+            display: none;
+        }
+        .btn-mobile-close {
+            display: none;
         }
     
     }
@@ -60,14 +63,53 @@ header{
             .logo{
                 max-width: 10.8rem;
             }
-            nav{
-                ul{
-                   display: none;
+            transition: right .6s linear;
+            nav {
+                position: fixed;
+                right: -800px; // escondido right
+                height: 100vh; //100% da viewport
+                transition: all .6s linear;
+                width: 65%; 
+                max-width: 35rem;
+                z-index: 10000; 
+                box-shadow: -5px 5px 10px rgba(0,0,0, 0.1);
+                background-color: #0073CE;
+                top: 0; 
+                flex-direction: column; // direcao coluna
+                ul {
+                    transition: all .6s linear;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    margin-right: 0;
+                    height: 55%;
+                    li {
+                        &:not(:first-child) {
+                            margin-left: 0;
+                        }
+                        margin: 0;
+                        text-align: center;
+                        a {
+                            font-size: 2rem;
+                        }
+                    }
                 }
-                .btn-mobile{
-                    display: inline-block;
-                    margin-left: 4rem;
+               .btn-mobile.close {
+                    display: block;
+                    height: 10%;
+                    max-height: 8.8rem;
+                    align-self: flex-end;
+                    padding: 20px;
                 }
+                .btn-secondary {
+                    display: none;
+                }
+                &.active {
+                    right: 0; // show on the screen (toggled by javascript function)
+                }
+            }
+            .btn-mobile{
+                display: inline-block;
+                margin-left: 4rem;
             }
         }   
     }
@@ -77,8 +119,23 @@ header{
         }
         .container{
             nav{
-                .btn-secondary{
-                    display: none;
+                .btn-mobile{
+                    height: 7.1rem;
+                }
+                img{
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+    @include responsive(340px) {
+        nav {
+            .btn-mobile{
+                height: 7.3rem;
+            }
+            ul {
+                li {
+                    font-size: 1.8rem;
                 }
             }
         }
