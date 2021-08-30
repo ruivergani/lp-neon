@@ -41,5 +41,12 @@ AOS.init({
   once: true       // execute only once
 });
 
-
 // Menu Mobile
+
+function openNav() {
+  document.getElementById("myUl").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myUl").style.height = "0%";
+}
