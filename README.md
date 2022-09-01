@@ -1,6 +1,6 @@
 # Landing Page Bank NEON - Redesign 
 
-Link: https://neonbank.netlify.app
+Link: https://ruivergani.github.io/lp-neon/
  
 Website developed during the CodeBoost course. Assisted by William Moreira I have developed this landing page for the bank NEON (brazilian startup).
 
