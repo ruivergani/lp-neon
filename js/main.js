@@ -1,5 +1,4 @@
 // Script for Swipper Slide
-
     var swiper = new Swiper(".slide-depoimentos", {
         slidesPerView: 3,
         spaceBetween: 32,
@@ -24,7 +23,6 @@
     });
 
 // Script to change background color header
-
 $(window).on("scroll", function() {
   if($(window).scrollTop() > 50) {
       $("#cabecalho").addClass("bgON");
@@ -35,14 +33,12 @@ $(window).on("scroll", function() {
 });
 
 // AOS Animate 
-
 AOS.init({
   duration : 1000, // duration of the animation
   once: true       // execute only once
 });
 
 // Menu Mobile
-
 const btn_mobile = document.querySelectorAll('.btn-mobile');
 const nav = document.querySelector('#nav')
 
