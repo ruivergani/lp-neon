@@ -58,3 +58,14 @@ dropdownMenu.addEventListener('mouseleave', () => {
   dropdownMenu.classList.toggle('active');
 });
 
+// Code change background menu without Jquery
+// const header = document.getElementById('js-header')
+// function fixedMenu () {
+//     // O window.pageYOffset pega a posição da pagina e quando a pagina estiver numa posição maior que 80 vai executar a função
+//     if(window.pageYOffset > 80) {
+//         header.classList.add('fixed-menu');
+//     } else {
+//         header.classList.remove('fixed-menu');
+//     }
+// }
+// document.addEventListener('scroll', fixedMenu)
