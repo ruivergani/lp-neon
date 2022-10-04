@@ -48,7 +48,7 @@
 </head>
 <body>
 
-    <header id="cabecalho" class="">
+    <header id="cabecalho" class="js-header">
         <div class="container">
             <a href="./" class="logo" id="logo">
                 <img src="./img/logo.svg" alt="Logo Neon">
@@ -58,13 +58,37 @@
                     <img src="./img/close.svg" alt="">
                 </button>
                 <ul>
-                    <li><a href="#s-card-neon">Products Neon</a></li>
+                    <!-- add ID to the element that will have a dropdown -->
+                    <li><a id="js-btn-dropdown01" href="#s-card-neon">Products Neon</a></li>
                     <li><a href="#s-card-depoimentos">Digital Account PJ</a></li>
                     <li><a href="#s-conta-digital">Who we are</a></li>
                     <li><a href="#top">Blog</a></li>
                     <li><a href="#top">Help</a></li>
                 </ul>
                 <button class="btn-secondary white">Open your digital account</button>
+                <!-- Create the Dropdown menu -->
+                <div class="dropdown js-dropdown">
+                    <div class="item">
+                        <h5>Credit card</h5>
+                        <p>No-fee credit card</p>
+                    </div>
+                    <div class="item">
+                        <h5>Prepaid card</h5>
+                        <p>Neon international debit card</p>
+                    </div>
+                    <div class="item">
+                        <h5>Neon More</h5>
+                        <p>5 free withdrawals for those who buy with Neon</p>
+                    </div>
+                    <div class="item">
+                        <h5>Investments</h5>
+                        <p>The evolution of savings</p>
+                    </div>
+                    <div class="item">
+                        <h5>Personal loan</h5>
+                        <p>Make a personal loan simulation</p>
+                    </div>
+                </div>
             </nav>
             <button class="btn-mobile" id="btn-mobile">
                 <img src="./img/btn-mobile.svg" alt="">

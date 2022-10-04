@@ -47,3 +47,6 @@ btn_mobile.forEach(btn => {
         nav.classList.toggle('active')
     })
 })
+
+// Menu dropdown
+const btnDropdown = document.getElementById('js-btn-dropdown01');
