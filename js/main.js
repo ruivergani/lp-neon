@@ -49,4 +49,12 @@ btn_mobile.forEach(btn => {
 })
 
 // Menu dropdown
-const btnDropdown = document.getElementById('js-btn-dropdown01');
+const dropdownMenuItem = document.getElementById('js-btn-dropdown01'); // item on nav
+const dropdownMenu = document.querySelector('.js-dropdown'); // Menu Drodpdown
+dropdownMenuItem.addEventListener('mouseover', () => {
+  dropdownMenu.classList.toggle('active');
+});
+dropdownMenu.addEventListener('mouseleave', () => {
+  dropdownMenu.classList.toggle('active');
+});
+

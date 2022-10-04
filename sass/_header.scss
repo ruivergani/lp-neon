@@ -54,6 +54,16 @@ header{
                 gap: 2.8rem;
                 border-radius: 6px;
                 border-bottom: 4px solid #FFC800;
+                // hide menus and apply transition
+                opacity: 0;
+                pointer-events: none;
+                transform: translateY(-100%); // come from top
+                transition: all .3s;
+                &.active{
+                    opacity: 1;
+                    transform: translateY(0%); // come from top
+                    pointer-events: all;
+                }
                 .item{
                     h5{
                         font-family: 'Proxima Nova', sans-serif;
@@ -79,7 +89,6 @@ header{
                         }
                     }
                 }
-                
             }
         }
         /* ==== Mobile Menu ==== */
