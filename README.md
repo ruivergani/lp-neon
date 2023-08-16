@@ -21,7 +21,7 @@ ___
 The page in desktop format is seen in the image below:
 \
 \
-![Screenshot 2023-08-16 at 12 15 56](https://github.com/ruivergani/Blog-CMS/assets/70537459/01e5c9d6-a1b5-4954-856a-9d014d70f0fb)
+![Screenshot 2023-08-16 at 12 25 52](https://github.com/ruivergani/lp-neon/assets/70537459/4b8a80de-5c20-45ad-94de-7517eb0e0f2b)
 
 ___
 
